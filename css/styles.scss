@@ -171,6 +171,7 @@ a:hover {
   //   border: none;
   border-radius: 20px;
   overflow: hidden;
+  margin-bottom: 2rem;
 
   &:hover {
     .price-tag {
@@ -338,4 +339,10 @@ a:hover {
       width: 50%;
     }
   }
+}
+
+// ********************************** packages.html ********************************** //
+// filter section
+#filter {
+  padding: 7% 10%;
 }
