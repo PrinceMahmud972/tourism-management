@@ -17,8 +17,18 @@ body {
 }
 
 h2,
-h3 {
+h3,
+h4,
+h5 {
   font-family: 'Ubuntu', sans-serif;
+}
+
+a {
+  color: $textColor;
+}
+
+a:hover {
+  text-decoration: none;
 }
 
 // Navbar section
@@ -108,6 +118,28 @@ h3 {
   }
 }
 
+// Search Section
+
+#search {
+  padding: 5% 10%;
+  background-color: $textColor;
+  color: white;
+
+  .form-inline {
+    .form-control {
+      background: transparent;
+      border: 1px solid $secondaryTextColor;
+    }
+    button {
+      color: white;
+      background-color: $linkColor;
+      &:hover {
+        background-color: $dangerColor;
+      }
+    }
+  }
+}
+
 // Popular Destination Section
 
 #popular {
@@ -120,6 +152,11 @@ h3 {
   color: white;
   padding: 10px 30px;
   margin-top: 3rem;
+
+  &:hover {
+    background-color: $linkColor;
+    color: white;
+  }
 }
 
 .subtitle {
@@ -167,7 +204,6 @@ h3 {
 
 .card-body a {
   text-decoration: none;
-  color: $infoColor;
   &:hover {
     color: $dangerColor;
   }
@@ -187,4 +223,70 @@ h3 {
   background-color: $dangerColor;
   text-align: center;
   padding: 7% 10%;
+}
+
+.service {
+  background-color: #fff;
+  border-radius: 20px;
+  padding: 30px;
+
+  img {
+    width: 100px;
+    margin-bottom: 20px;
+  }
+
+  h3 {
+    color: $textColor;
+  }
+
+  &:hover {
+    background-color: $successColor;
+    box-shadow: 0 10px 20px #040e27;
+    text-decoration: none;
+
+    h3 {
+      color: #fff;
+    }
+  }
+}
+
+#countries {
+  padding: 7% 10%;
+  text-align: center;
+}
+
+.country {
+  border-radius: 10px;
+  overflow: hidden;
+  position: relative;
+  color: white;
+  height: 250px;
+  margin-bottom: 2rem;
+
+  &:hover {
+    box-shadow: 0 10px 30px $textColor;
+    .country-name {
+      color: $dangerColor;
+      & span {
+        color: #fff;
+        background-color: $dangerColor;
+      }
+    }
+  }
+
+  &-image {
+    height: 100%;
+  }
+
+  &-name {
+    position: absolute;
+    bottom: 10px;
+    margin-left: 20px;
+
+    span {
+      background-color: $linkColor;
+      padding: 5px 10px;
+      border-radius: 10px;
+    }
+  }
 }

@@ -6,8 +6,18 @@ body {
 }
 
 h2,
-h3 {
+h3,
+h4,
+h5 {
   font-family: 'Ubuntu', sans-serif;
+}
+
+a {
+  color: #040e27;
+}
+
+a:hover {
+  text-decoration: none;
 }
 
 .navbar {
@@ -100,6 +110,26 @@ h3 {
   color: white;
 }
 
+#search {
+  padding: 5% 10%;
+  background-color: #040e27;
+  color: white;
+}
+
+#search .form-inline .form-control {
+  background: transparent;
+  border: 1px solid #7a838b;
+}
+
+#search .form-inline button {
+  color: white;
+  background-color: #1ec6b6;
+}
+
+#search .form-inline button:hover {
+  background-color: #f54a40;
+}
+
 #popular {
   text-align: center;
   padding: 7% 10%;
@@ -110,6 +140,11 @@ h3 {
   color: white;
   padding: 10px 30px;
   margin-top: 3rem;
+}
+
+.poplular-button:hover {
+  background-color: #1ec6b6;
+  color: white;
 }
 
 .subtitle {
@@ -154,7 +189,6 @@ h3 {
 
 .card-body a {
   text-decoration: none;
-  color: #38a4ff;
 }
 
 .card-body a:hover {
@@ -173,5 +207,75 @@ h3 {
   background-color: #f54a40;
   text-align: center;
   padding: 7% 10%;
+}
+
+.service {
+  background-color: #fff;
+  border-radius: 20px;
+  padding: 30px;
+}
+
+.service img {
+  width: 100px;
+  margin-bottom: 20px;
+}
+
+.service h3 {
+  color: #040e27;
+}
+
+.service:hover {
+  background-color: #4bd3e3;
+  -webkit-box-shadow: 0 10px 20px #040e27;
+          box-shadow: 0 10px 20px #040e27;
+  text-decoration: none;
+}
+
+.service:hover h3 {
+  color: #fff;
+}
+
+#countries {
+  padding: 7% 10%;
+  text-align: center;
+}
+
+.country {
+  border-radius: 10px;
+  overflow: hidden;
+  position: relative;
+  color: white;
+  height: 250px;
+  margin-bottom: 2rem;
+}
+
+.country:hover {
+  -webkit-box-shadow: 0 10px 30px #040e27;
+          box-shadow: 0 10px 30px #040e27;
+}
+
+.country:hover .country-name {
+  color: #f54a40;
+}
+
+.country:hover .country-name span {
+  color: #fff;
+  background-color: #f54a40;
+}
+
+.country-image {
+  height: 100%;
+}
+
+.country-name {
+  position: absolute;
+  bottom: 10px;
+  margin-left: 20px;
+}
+
+.country-name span {
+  background-color: #1ec6b6;
+  padding: 5px 10px;
+  border-radius: 10px;
 }
 /*# sourceMappingURL=styles.css.map */
