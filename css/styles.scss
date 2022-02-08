@@ -124,6 +124,7 @@ a:hover {
   padding: 5% 10%;
   background-color: $textColor;
   color: white;
+  text-align: center;
 
   .form-inline {
     .form-control {
@@ -287,6 +288,54 @@ a:hover {
       background-color: $linkColor;
       padding: 5px 10px;
       border-radius: 10px;
+    }
+  }
+}
+
+// Footer Section
+#footer {
+  background-color: $textColor;
+  color: white;
+  padding: 2% 10%;
+
+  .footer-brand {
+    font-size: 2rem;
+    font-family: 'Ubuntu', sans-serif;
+  }
+
+  .contact-info {
+    font-size: 0.8rem;
+    color: $secondaryTextColor;
+    line-height: 1.5rem;
+  }
+
+  .social i {
+    margin-right: 20px;
+  }
+
+  a {
+    color: white;
+  }
+
+  ul {
+    padding: 0;
+    font-size: 0.8rem;
+    li {
+      list-style-type: none;
+      padding: 10px 0;
+      a {
+        color: $secondaryTextColor;
+        &:hover {
+          color: $dangerColor;
+        }
+      }
+    }
+  }
+
+  .footer-destination {
+    li {
+      float: left;
+      width: 50%;
     }
   }
 }
